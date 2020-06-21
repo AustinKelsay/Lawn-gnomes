@@ -5,12 +5,16 @@ import "./components.css";
 const Email = () => {
     const [emailInfo, SetEmailInfo] = useState({
         feedback: '', 
-        name: 'Gus', 
+        name: '', 
         email: 'austinkelsay11@gmail.com'
     })
 
     const handleChange = (e) => {
         SetEmailInfo({feedback: e.target.value})
+    }
+
+    const handleNameChange = (e) => {
+        SetEmailInfo({name: e.target.value})
     }
     
     const sendFeedback = (templateId, variables) => {
@@ -38,8 +42,17 @@ const Email = () => {
                 <textarea
                     id="test-mailing"
                     name="test-mailing"
+                    onChange={handleNameChange}
+                    placeholder="Enter your name here"
+                    required
+                    value={emailInfo.name}
+                    style={{width: '40%', height: '40px'}}
+                />
+                <textarea
+                    id="test-mailing"
+                    name="test-mailing"
                     onChange={handleChange}
-                    placeholder="Post some lorem ipsum here"
+                    placeholder="Message"
                     required
                     value={emailInfo.feedback}
                     style={{width: '100%', height: '150px'}}
