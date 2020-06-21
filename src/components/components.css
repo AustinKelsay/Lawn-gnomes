@@ -1,3 +1,39 @@
 .content {
     margin: 1% auto;
 }
+
+/* Email */
+
+.test-mailing {
+    margin: 3% auto;
+}
+
+/* Main */
+
+.social-icons{
+    width: 85%;
+    margin: 0 auto;
+    padding: 1%;
+    border-bottom: 1px dotted black;
+    margin-bottom: 1%;
+}
+
+.logo {
+    overflow: hidden;
+    width: 60%;
+    margin-top: -20%;
+    margin-bottom: -10%;
+}
+
+.header{
+    font-size: 2rem;
+}
+/* ModalComponent */
+
+.modal-component button {
+    width: 70%;
+    margin-top: 7%;
+    margin-bottom: 0%;
+}
+
+

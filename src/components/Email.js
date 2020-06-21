@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import Button from '@material-ui/core/Button';
+import "./components.css";
 
 const Email = () => {
     const [emailInfo, SetEmailInfo] = useState({
@@ -43,7 +45,9 @@ const Email = () => {
                     style={{width: '100%', height: '150px'}}
                 />
             </div>
-            <input type="button" value="Submit" className="btn btn--submit" onClick={handleSubmit} />
+            <Button onClick={handleSubmit} variant="outlined" color="primary">
+                Send
+            </Button>
   	    </form>
     )
 }
