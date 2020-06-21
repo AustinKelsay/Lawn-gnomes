@@ -17,6 +17,12 @@ function getModalStyle() {
 }
 
 const useStyles = makeStyles((theme) => ({
+  button: {
+    borderColor: '#63B0CD',
+      backgroundColor: '#2E933C',
+      fontSize: '1.1rem',
+      letterSpacing: '2px'
+  },
   paper: {
     position: 'absolute',
     width: '60%',
@@ -51,7 +57,7 @@ export default function SimpleModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen} variant="outlined" color="primary">
+      <Button className={classes.button} onClick={handleOpen} variant="outlined">
         Set up an appointment
       </Button>
       <Modal

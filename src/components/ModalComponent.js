@@ -7,6 +7,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
+    button: {
+      borderColor: '#63B0CD',
+      backgroundColor: '#2E933C',
+      fontSize: '1.1rem',
+      letterSpacing: '2px'
+    },
     cardGrid: {
       paddingTop: theme.spacing(2),
       paddingBottom: theme.spacing(4),
@@ -70,7 +76,7 @@ const ModalComponent = () => {
     
       return (
         <div className="modal-component">
-            <Button variant="outlined" color="success" className="button" onClick={handleOpen}>
+            <Button variant="outlined" className={classes.button} onClick={handleOpen}>
                 Learn more
             </Button>
             <div style={modalStyle}>
