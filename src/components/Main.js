@@ -16,8 +16,7 @@ import EmailModal from "./EmailModal";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#2E933C"
-
+    backgroundColor: "#2E933C",
   },
   icon: {
     marginRight: theme.spacing(2),
@@ -52,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     borderTop: '2px solid #EBEDE9'
   },
   footerIcon: {
-    marginTop: '1%'
+    marginTop: '-2%'
   }
 }));
 
@@ -65,8 +64,16 @@ export default function Main() {
     <React.Fragment>
       <CssBaseline />
       <AppBar className={classes.appBar} position="relative">
-        <Toolbar>
+        <Toolbar className="toolbar">
           <h1 className="header">The Lawn Gnome</h1>
+          <div className="social-icons">
+              <div className="social-icon-wrapper">
+                <SocialIcon url='https://www.facebook.com/thelawngnomeokc' target="_blank" />
+              </div>
+              <div className="social-icon-wrapper">
+                <SocialIcon network="email" url='austinkelsay@yahoo.com' target="_blank" />
+              </div>
+          </div>
         </Toolbar>
       </AppBar>
       <main>
@@ -74,9 +81,6 @@ export default function Main() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <img className="logo" src={Logo} />
-            <div className="social-icons">
-              <SocialIcon url='https://www.facebook.com/thelawngnomeokc' target="_blank" />
-            </div>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Something short and leading about the collection below—its contents, the creator, etc.
               Make it short and sweet, but not too short so folks don&apos;t simply skip over it
