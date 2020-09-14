@@ -1,7 +1,12 @@
 import React from "react";
 import ModalComponent from "./ModalComponent";
 import "./components.css";
-
+import img1 from "../images/1.jpg"
+import img2 from "../images/2.jpg"
+import img3 from "../images/3.jpg"
+import img4 from "../images/4.jpg"
+import img5 from "../images/5.jpg"
+import img6 from "../images/6.jpg"
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -40,7 +45,32 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Cards = () => {
-  const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const cards = [
+    {
+      id: 1,
+      img: img1
+    },
+    {
+      id: 2,
+      img: img2
+    },
+    {
+      id: 3,
+      img: img3
+    },
+    {
+      id: 4,
+      img: img4
+    },
+    {
+      id: 5,
+      img: img5
+    },
+    {
+      id: 6,
+      img: img6
+    },
+];
 
   const classes = useStyles();
 
@@ -53,7 +83,7 @@ const Cards = () => {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image={card.img}
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
