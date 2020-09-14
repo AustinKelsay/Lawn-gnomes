@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
       },
   }));
 
-const ModalComponent = () => {
+const ModalComponent = (props) => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [modalStyle] = React.useState(getModalStyle);
@@ -63,14 +63,7 @@ const ModalComponent = () => {
 
     const body = (
         <div style={modalStyle} className={classes.paper}>
-          <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          </p>
+          <p>{props.text}</p>
         </div>
       );
     

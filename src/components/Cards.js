@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '56.25%', // 16:9
   },
   cardContent: {
-    flexGrow: 1,
+    paddingBottom: 'none'
   },
   paper: {
     position: 'absolute',
@@ -48,27 +48,33 @@ const Cards = () => {
   const cards = [
     {
       id: 1,
-      img: img1
+      img: img1,
+      text: "We now offer mosquito fogging!  (Over 75 insects: Stink Bugs, Bed Bugs, Scorpions, Spiders, Mosquitoes, Cockroaches, Ticks, Fleas, Pillbugs, Chinch Bugs, Earwigs, Millipedes, Dichondra Flea Beetles, Spittlebugs and others)"
     },
     {
       id: 2,
-      img: img2
+      img: img2,
+      text: "We can do stone work for your garden or patio!"
     },
     {
       id: 3,
-      img: img3
+      img: img3,
+      text: "Busy during the holidays? We will set up your lights in no time!"
     },
     {
       id: 4,
-      img: img4
+      img: img4,
+      text: "We do brick work of all kinds, reach out and we can give you an estimate today!"
     },
     {
       id: 5,
-      img: img5
+      img: img5,
+      text: "Let us transform your garden with fresh flowers, iron garden lining, stones, and soil substitutions!"
     },
     {
       id: 6,
-      img: img6
+      img: img6,
+      text: "We also can do custom planters for your home or bussiness!"
     },
 ];
 
@@ -87,13 +93,10 @@ const Cards = () => {
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                    <Typography gutterBottom variant="h6" component="h3">
+                      Services
                     </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the content.
-                    </Typography>
-                    <ModalComponent />
+                    <ModalComponent text={card.text} />
                   </CardContent>
                 </Card>
               </Grid>

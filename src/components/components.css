@@ -53,8 +53,11 @@
 
 .modal-component button {
     width: 70%;
-    margin-top: 7%;
+    margin-top: 2%;
     margin-bottom: 0%;
 }
 
+.makeStyles-paper-244 p {
+    margin: 25% auto;
+}
 

@@ -37,7 +37,7 @@ const Email = () => {
 
     return(
         <form className="test-mailing">
-            <h1>Let's see if it works</h1>
+            <h1>Let's get in touch!</h1>
             <div>
                 <textarea
                     id="test-mailing"
