@@ -17,7 +17,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
     paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(4),
+    paddingBottom: theme.spacing(2),
   },
   card: {
     height: '100%',
@@ -82,7 +82,7 @@ const Cards = () => {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card.id} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -93,7 +93,7 @@ const Cards = () => {
                     <Typography gutterBottom variant="h6" component="h3">
                       Services
                     </Typography>
-                    <Typography gutterBottom variant="p" component="p">{card.text}</Typography>
+                    <Typography gutterBottom variant="subtitle2" component="p">{card.text}</Typography>
                   </CardContent>
                 </Card>
               </Grid>
