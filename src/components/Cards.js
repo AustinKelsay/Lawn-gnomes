@@ -1,5 +1,4 @@
 import React from "react";
-import ModalComponent from "./ModalComponent";
 import "./components.css";
 import img1 from "../images/1.jpg"
 import img2 from "../images/2.jpg"
@@ -7,9 +6,7 @@ import img3 from "../images/3.jpg"
 import img4 from "../images/4.jpg"
 import img5 from "../images/5.jpg"
 import img6 from "../images/6.jpg"
-import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Container from '@material-ui/core/Container';
@@ -54,12 +51,12 @@ const Cards = () => {
     {
       id: 2,
       img: img2,
-      text: "We can do stone work for your garden or patio!"
+      text: "We can do stone work for your garden or patio! We source our stones locally and can work around a number of different jobs not just strict 'brick stacking'"
     },
     {
       id: 3,
       img: img3,
-      text: "Busy during the holidays? We will set up your lights in no time!"
+      text: "Busy during the holidays? We will set up your lights in no time! We would love to help make your house the shining star of your street!"
     },
     {
       id: 4,
@@ -74,7 +71,7 @@ const Cards = () => {
     {
       id: 6,
       img: img6,
-      text: "We also can do custom planters for your home or bussiness!"
+      text: "We can also do custom planters for your home or bussiness!"
     },
 ];
 
@@ -96,7 +93,7 @@ const Cards = () => {
                     <Typography gutterBottom variant="h6" component="h3">
                       Services
                     </Typography>
-                    <ModalComponent text={card.text} />
+                    <Typography gutterBottom variant="p" component="p">{card.text}</Typography>
                   </CardContent>
                 </Card>
               </Grid>

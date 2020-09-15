@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import Email from "./Email"
 
@@ -33,10 +34,20 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
+  mobilePaper: {
+    position: 'absolute',
+    width: '80%',
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #2E933C',
+    borderRadius: '10px',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(1, 2, 1),
+  }
 }));
 
 export default function SimpleModal() {
   const classes = useStyles();
+  const mobile = useMediaQuery('(max-width: 400px)');
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
@@ -50,7 +61,7 @@ export default function SimpleModal() {
   };
 
   const body = (
-    <div style={modalStyle} className={classes.paper}>
+    <div style={modalStyle} className={mobile ? classes.mobilePaper : classes.paper}>
       <Email />
     </div>
   );

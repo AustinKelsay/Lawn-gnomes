@@ -8,6 +8,11 @@
     margin: 3% auto;
 }
 
+.test-mailing textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 /* Main */
 
 .toolbar{
@@ -60,4 +65,5 @@
 .makeStyles-paper-244 p {
     margin: 25% auto;
 }
+
 
