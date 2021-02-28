@@ -46,12 +46,12 @@ const Cards = () => {
     {
       id: 1,
       img: img1,
-      text: "We now offer mosquito fogging!  (Over 75 insects: Stink Bugs, Bed Bugs, Scorpions, Spiders, Mosquitoes, Cockroaches, Ticks, Fleas, Pillbugs, Chinch Bugs, Earwigs, Millipedes, Dichondra Flea Beetles, Spittlebugs and others)"
+      text: "We now offer mosquito fogging  (Over 75 insects: Stink Bugs, Bed Bugs, Scorpions, Spiders, Mosquitoes, Cockroaches, Ticks, Fleas, Pillbugs, Chinch Bugs, Earwigs, Millipedes, Dichondra Flea Beetles, Spittlebugs and others)"
     },
     {
       id: 2,
       img: img2,
-      text: "We can do stone work for your garden or patio! We source our stones locally and can work around a number of different jobs not just strict 'brick stacking'"
+      text: "We can do stone work for your garden or patio. We source our stones locally and can work around a number of different jobs not just strict 'brick stacking'"
     },
     {
       id: 3,
@@ -61,17 +61,17 @@ const Cards = () => {
     {
       id: 4,
       img: img4,
-      text: "We do brick work of all kinds, reach out and we can give you an estimate today!"
+      text: "We do brick work of all kinds, reach out and we can give you an estimate today."
     },
     {
       id: 5,
       img: img5,
-      text: "Let us transform your garden with fresh flowers, iron garden lining, stones, and soil substitutions!"
+      text: "Let us transform your garden with fresh flowers, iron garden lining, stones, and soil substitutions."
     },
     {
       id: 6,
       img: img6,
-      text: "We can also do custom planters for your home or bussiness!"
+      text: "We do custom planters for your home or bussiness."
     },
 ];
 
